@@ -5,8 +5,8 @@
 /**
  * main - Entry point of the program
  *
- * This function generates a random number, assigns it to the variable 'n',
- * and prints whether the number is positive, negative, or zero.
+ * Description: This function generates a random number, assigns it to the
+ * variable 'n', and prints whether the number is positive, negative, or zero.
  *
  * Return: Always 0 (Success)
  */
@@ -18,20 +18,14 @@ int main(void)
     srand(time(0));
     n = rand() - RAND_MAX / 2;
 
-    /* Print the generated number */
-    printf("The number %d is ", n);
-
     /* Check if the number is positive, negative, or zero */
     if (n > 0) {
-        printf("positive");
+        printf("%d is positive\n", n);
     } else if (n < 0) {
-        printf("negative");
+        printf("%d is negative\n", n);
     } else {
-        printf("zero");
+        printf("%d is zero\n", n);
     }
-
-    /* Print a new line */
-    printf("\n");
 
     return (0);
 }
