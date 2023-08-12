@@ -2,10 +2,19 @@
 #include <stdlib.h>
 #include <time.h>
 
-/* betty style doc for function main goes there */
-int main(void) {
+/**
+ * main - Entry point of the program
+ *
+ * This function generates a random number, assigns it to the variable 'n',
+ * and prints whether the number is positive, negative, or zero.
+ *
+ * Return: Always 0 (Success)
+ */
+int main(void)
+{
     int n;
 
+    /* Seed the random number generator */
     srand(time(0));
     n = rand() - RAND_MAX / 2;
 
