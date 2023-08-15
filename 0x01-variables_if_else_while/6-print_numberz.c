@@ -10,9 +10,13 @@
  */
 int main(void)
 {
-putchar('0') ('1') ('2') ('3') ('4') ('5') ('6') ('7') ('8') ('9');
-putchar('\n');
+int x;
 
+for (x = 48; x <= 57; x++)
+{
+putchar(x);
+putchar('\n');
+}
 return (0);
 }
 

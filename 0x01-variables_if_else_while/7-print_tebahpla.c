@@ -10,6 +10,9 @@
  */
 int main(void)
 {
+int z;
+
+for (z = 122
 putchar('z');
 putchar('\n');
 
