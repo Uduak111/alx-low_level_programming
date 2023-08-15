@@ -24,4 +24,4 @@ putchar('0' + 9); /* Print the digit '9' */
 putchar('\n');    /* Print a newline character */
 
 return (0); /**< Return 0 to indicate successful execution */
-
+}
