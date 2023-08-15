@@ -10,7 +10,7 @@
  */
 int main(void)
 {
-putchar('z');
+putchar('zyxwvutsrqponmlkjihgfedcba');
 putchar('\n');
 
 return (0);
