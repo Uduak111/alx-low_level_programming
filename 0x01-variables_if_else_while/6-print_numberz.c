@@ -16,7 +16,7 @@ for (x = 0; x <= 9; x++)
 {
 putchar(x + '0');
 }
-putchar('\n'); /* Print a newline character after the loop */ 
+putchar('\n'); /* Print a newline character after the loop */
 return (0);
 }
 
