@@ -24,6 +24,6 @@ putchar(' ');
 
 putchar('\n'); /* Add new line after the loop */
 
-return 0;
+return (0);
 }
 
