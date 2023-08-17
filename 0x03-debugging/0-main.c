@@ -1,19 +1,16 @@
 #include "main.h"
 
-
 /**
-* main - test function that print if integer is pasitive, negative, or zero
-* Return: 0
-* */
-
+ * main - test function for positive or negative
+ * Return: 0
+ */
 
 int main(void)
 {
-int i;
+        int i;
 
-i = 0;
-positive or negative(i);
+        i = 0;
+        positive_or_negative(i);
 
-
-return (0);
+        return (0);
 }
