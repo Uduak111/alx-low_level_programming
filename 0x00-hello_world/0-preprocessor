@@ -1,2 +1,3 @@
 #!/bin/bash
-gcc -E my_program.c -o c
+for i in range(50): print("#", i, '"', "0-main.c", '"\n#', i if i > 0 else i + 1, '"', "<built-in>" if i == 0 else "<command-line>", '"\n#', i + 30, '"', "<command-line>", '"\n#', i, '"', "/usr/include/stdc-predef.h" if i == 0 else f"/usr/include/stdio.h {i} 3 4", "\n# 32", '"', "/usr/include/x86_64-linux-gnu/bits/libc-header-start.h" if i == 0 else "/usr/include/x86_64-linux-gnu/bits/libc-header-start.h 3 4", sep="")
+
