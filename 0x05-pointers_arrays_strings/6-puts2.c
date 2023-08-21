@@ -10,12 +10,11 @@ int i = 0;
 
 while (str[i] != '\0')
 {
-_putchar(str[i]); /* Print the current character */
+_putchar("%c", str[i]); /* Print the current character */
 
 i += 2; /* Move to the next character with a step of 2 */
 }
 
 _putchar('\n'); /* Print a new line after printing characters */
 }
-
 
