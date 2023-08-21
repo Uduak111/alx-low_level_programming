@@ -16,7 +16,7 @@ length++;
 
 /* Declare variables at the beginning of the block */
 {
-int start; 
+int start;
 int end;
 char temp;
 
