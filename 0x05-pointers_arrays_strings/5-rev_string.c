@@ -13,24 +13,24 @@ while (s[length] != '\0')
 {
 length++;
 }
-    
+
 /* Declare variables at the beginning of the block */
 {
 int start; 
 int end;
 char temp;
-    
+
 /* Initialize the variables */
 start = 0;
 end = length - 1;
-    
+
 /* Swap characters from start to end to reverse the string */
 while (start < end)
 {
 temp = s[start];
 s[start] = s[end];
 s[end] = temp;
-        
+
 start++;
 end--;
 }
