@@ -15,8 +15,9 @@ length++;
 }
     
 /* Declare variables at the beginning of the block */
-start; 
-end;
+{
+int start; 
+int end;
 char temp;
     
 /* Initialize the variables */
@@ -32,6 +33,7 @@ s[end] = temp;
         
 start++;
 end--;
+}
 }
 }
 
