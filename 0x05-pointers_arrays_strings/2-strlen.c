@@ -14,6 +14,6 @@ while (s[length] != '\0')
 length++;
 }
 
-return length;
+return (length); /* Enclose the return value in paretheses */
 }
 
