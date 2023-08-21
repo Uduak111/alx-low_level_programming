@@ -1,20 +1,19 @@
 #include "main.h" /* Make sure to include any necessary header files */
 
-/**
-* puts2 - Prints every other character of a string followed by a new line.
-* @str: Pointer to the string to be printed.
-*/
-void puts2(char *str)
+# Function that prints every other character of a string, starting with the first character
+# Usage: print_every_other str
+print_every_other()
 {
-int i = 0;
+str="$1"
+len=${#str}
 
-while (str[i] != '\0')
-{
-_putchar(str[i]); /* Print the current character */
+for ((i = 0; i < len; i += 2)); do
+printf "%c" "${str:$i:1}"
+done
 
-i += 2; /* Move to the next character with a step of 2 */
+printf "\n"
 }
 
-_putchar('\n');
-}
+input="Lrmismdlrstae,cnettraiicn lt e oeumdtmo niiutu aoee ooemgaaiu.U nma ii eim usnsrdeectto lac aoi iiu lqi xe omd osqa.Di ueiuedlri erhnei nvlpaevltes ilmdlr ufga ul aitr xetu itocea uiaa o riet uti up u fii eeutmli nmi s aou.Hletn"
 
+print_every_other "$input"
