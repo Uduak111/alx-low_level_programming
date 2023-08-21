@@ -1,9 +1,9 @@
 #include "main.h" /* Make sure to include any necessary header files */
 
 /**
- * puts2 - Prints every other character of a string followed by a new line.
- * @str: Pointer to the string to be printed.
- */
+* puts2 - Prints every other character of a string followed by a new line.
+* @str: Pointer to the string to be printed.
+*/
 void puts2(char *str)
 {
 int i = 0;
