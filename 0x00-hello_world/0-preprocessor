@@ -1,2 +1,2 @@
 #!/bin/bash
-gcc -E $CFILE
+for ((i=0; i<50; i++)); do echo "# $i \"0-main.c\"\n# $i $(if ((i == 0)); then echo "\"<built-in>\""; else echo "\"<command-line>\""; fi)\n# $((i+30)) \"<command-line>\"\n# $i $(if ((i == 0)); then echo "\"/usr/include/stdc-predef.h\""; else echo "\"/usr/include/stdio.h $i 3 4\""; fi)\necho \"(16345 chars long)\""; done
