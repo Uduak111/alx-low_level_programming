@@ -1,4 +1,4 @@
-#include "main.h" // Make sure to include any necessary header files
+#include "main.h" /* Make sure to include any necessary header files */
 
 /**
  * _strlen - Returns the length of a string.
