@@ -12,7 +12,7 @@ while (str[i] != '\0')
 {
 _putchar(str[i]); /* Print the current character */
 
-i += 2; /* Move to the next character with a step of 2 */
+i += 1; /* Move to the next character with a step of 1 */
 }
 
 _putchar('\n'); /* Print a new line after printing characters */
