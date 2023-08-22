@@ -1,4 +1,4 @@
-#include "main.h" /* Make sure to include any necessary header files */
+#include "main.h"
 
 /**
 * puts2 - Prints every other character of a string followed by a new line.
@@ -10,9 +10,9 @@ void puts2(char *str)
 {
 int(i);
 
-for(i = 0; str[i] != '\0'; i += 2)
+for (i = 0; str[i] != '\0'; i += 2)
 {
-if(i % 2 == 0)
+if (i % 2 == 0)
 {
 _putchar(str[i]);
 }
