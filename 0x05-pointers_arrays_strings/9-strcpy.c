@@ -18,6 +18,6 @@ i++;
 
 dest[i] = '\0'; /* Add the null terminator to the destination */
 
-return dest; /* Return a pointer to the destination buffer */
+return (est) /* Return a pointer to the destination buffer */
 }
 
