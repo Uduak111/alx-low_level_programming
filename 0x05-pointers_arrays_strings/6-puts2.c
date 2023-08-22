@@ -1,27 +1,16 @@
 #include "main.h"
-#include <stdio.h>  /* Include necessary headers */
+#include <stdio.h>
 
 /**
- * puts2 - Prints every other character of a string followed by a new line.
- * @str: Pointer to the string to be printed.
- * Return: void
+ * main - check the code
+ *
+ * Return: Always 0.
  */
 int main(void)
 {
-char str[] = "Lorem ipsum dolor sit amet, consectetur adipiscing elit.";
+char *str;
+
+str = "0123456789";
 puts2(str);
-
-return 0;
+return (0);
 }
-
-void puts2(char *str)
-{
-int i;
-
-for (i = 0; str[i] != '\0'; i += 2)
-{
-_putchar(str[i]);
-}
-_putchar('\n');
-}
-
