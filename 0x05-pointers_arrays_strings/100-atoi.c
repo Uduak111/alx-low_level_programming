@@ -1,5 +1,5 @@
-#include "main.h"  /* Include necessary headers */
-#include <limits.h> /* Include the limits.h header */
+#include "main.h"
+#include <limits.h>
 
 /**
  * _atoi - Converts a string to an integer.
@@ -8,39 +8,36 @@
  */
 int _atoi(char *s)
 {
-    int result = 0;
-    int sign = 1;  /* Initialize sign as positive */
+int result = 0;
+int sign = 1;  /* Initialize sign as positive */
 
-    /* Skip leading whitespace characters */
-    while (*s == ' ' || (*s >= 9 && *s <= 13))
-    {
-        s++;
-    }
+/* Skip leading whitespace characters */
+while (*s == ' ' || (*s >= 9 && *s <= 13))
+{
+s++;
+}
 
-    /* Handle signs */
-    if (*s == '-' || *s == '+')
-    {
-        if (*s == '-')
-	{
-            sign = -1;
-        }
-        s++;
-    }
+/* Handle signs */
+if (*s == '-' || *s == '+') {
+if (*s == '-') {
+sign = -1;
+}
+s++;
+}
 
-    /* Convert characters to integer */
-    while (*s >= '0' && *s <= '9')
-    {
-        /* Check for overflow */
-        if (result > INT_MAX / 10 || (result == INT_MAX / 10 && *s - '0' > INT_MAX % 10))
-	{
-            /* Handle overflow, return INT_MAX or INT_MIN based on the sign */
-            return (sign == 1) ? INT_MAX : INT_MIN;
-        }
+/* Convert characters to integer */
+while (*s >= '0' && *s <= '9')
+{
+/* Check for overflow */
+if (result > INT_MAX / 10 || (result == INT_MAX / 10 && *s - '0' > INT_MAX % 10))
+{
+return (sign == 1) ? INT_MAX : INT_MIN;
+}
 
-        result = result * 10 + (*s - '0');
-        s++;
-    }
+result = result * 10 + (*s - '0');
+s++;
+}
 
-    return result * sign;
+return result * sign;
 }
 
