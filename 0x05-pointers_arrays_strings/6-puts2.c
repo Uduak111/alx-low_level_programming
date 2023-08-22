@@ -3,18 +3,20 @@
 /**
  * puts2 - Prints every other character of a string followed by a new line.
  * @str: Pointer to the string to be printed.
+ * Return: every other character
  */
+
 void puts2(char *str)
 {
-int i = 0;
+int 1;
 
-while (str[i] != '\0')
+for (1 =0; str"[1] != '\0'; 1++)
 {
-_putchar(str[i]); /* Print the current character */
-
-i += 1; /* Move to the next character with a step of 1 */
+if (1 % 2 == 0)
+{
+_putch(str[1]);
 }
-
-_putchar('\n'); /* Print a new line after printing characters */
+}
+_putchar('\n')
 }
 
