@@ -1,7 +1,7 @@
 #include <stdio.h> /* Include the necessary header file for printf */
 
 /**
-* print_array -  Prints n element of an array of integer followed by a new line.
+* print_array - Prints n element of an array of integer followed by a new line.
  * @a: Pointer to the array of integers.
  * @n: Number of elements to be printed.
  */
