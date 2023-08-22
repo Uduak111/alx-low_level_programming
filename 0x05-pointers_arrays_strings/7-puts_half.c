@@ -6,25 +6,25 @@
  */
 void puts_half(char *str)
 {
-    int length = 0;
-    int start; /*Declare variable at the beginning */
-    
-    /* Calculate the length of the string */
-    while (str[length] != '\0')
-    {
-        length++;
-    }
+int length = 0;
+int start; /*Declare variable at the beginning */
 
-    /* Calculate the starting index for printing */
-    start = (length - 1) / 2 + 1;
-    
-    /* Print the characters starting from the calculated index */
-    while (str[start] != '\0')
-    {
-        _putchar(str[start]);
-        start++;
-    }
-    
-    _putchar('\n'); /* Print a new line after printing characters */
+/* Calculate the length of the string */
+while (str[length] != '\0')
+{
+length++;
+}
+
+/* Calculate the starting index for printing */
+start = (length - 1) / 2 + 1;
+
+/* Print the characters starting from the calculated index */
+while (str[start] != '\0')
+{
+_putchar(str[start]);
+start++;
+}
+
+_putchar('\n'); /* Print a new line after printing characters */
 }
 
