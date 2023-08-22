@@ -15,7 +15,9 @@ void puts_half(char *str)
 }
 
     /* Calculate the starting index for printing */
+{
     int start = (length - 1) / 2 + 1;
+}
 
     /* Print the characters starting from the calculated index */
     while (str[start] != '\0')
