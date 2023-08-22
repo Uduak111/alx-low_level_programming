@@ -8,15 +8,15 @@
 
 void puts2(char *str)
 {
-int 1;
+int (1);
 
-for (1 =0; str"[1] != '\0'; 1++)
+for (1 =0; str[1] != '\0'; 1++)
 {
 if (1 % 2 == 0)
 {
 _putch(str[1]);
 }
 }
-_putchar('\n')
+_putchar('\n');
 }
 
