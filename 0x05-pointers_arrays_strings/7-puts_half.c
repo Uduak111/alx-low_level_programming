@@ -7,6 +7,7 @@
 void puts_half(char *str)
 {
     int length = 0;
+    int start; /*Declare variable at the beginning */
     
     /* Calculate the length of the string */
     while (str[length] != '\0')
@@ -14,8 +15,8 @@ void puts_half(char *str)
         length++;
     }
 
-    /* Declare variables at the beginning of the block */
-    int start = (length - 1) / 2 + 1;
+    /* Calculate the starting index for printing */
+    start = (length - 1) / 2 + 1;
     
     /* Print the characters starting from the calculated index */
     while (str[start] != '\0')
