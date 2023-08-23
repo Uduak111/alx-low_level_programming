@@ -25,6 +25,6 @@ dest[dest_len + i] = src[i];
 /* Add a terminating null byte */
 dest[dest_len + i] = '\0';
 
-return dest;
+return (dest);
 }
 
