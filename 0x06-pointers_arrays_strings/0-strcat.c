@@ -8,23 +8,23 @@
  */
 char *_strcat(char *dest, char *src)
 {
-    int dest_len = 0, i;
+int dest_len = 0, i;
 
-    /* Find the length of the destination string */
-    while (dest[dest_len] != '\0')
-    {
-        dest_len++;
-    }
+/* Find the length of the destination string */
+while (dest[dest_len] != '\0')
+{
+dest_len++;
+}
 
-    /* Append characters from src to dest */
-    for (i = 0; src[i] != '\0'; i++)
-    {
-        dest[dest_len + i] = src[i];
-    }
+/* Append characters from src to dest */
+for (i = 0; src[i] != '\0'; i++)
+{
+dest[dest_len + i] = src[i];
+}
 
-    /* Add a terminating null byte */
-    dest[dest_len + i] = '\0';
+/* Add a terminating null byte */
+dest[dest_len + i] = '\0';
 
-    return dest;
+return dest;
 }
 
