@@ -20,10 +20,10 @@ char letter = 'a';
 
 while (letter <= 'z')
 {
-putchar(letter);
+_putchar(letter);
 letter++;
 }
 
-putchar('\n');
+_putchar('\n');
 }
 
