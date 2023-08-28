@@ -1,29 +1,21 @@
 #include "main.h"
-
 /**
- * simple_print_buffer - prints buffer in hexa
- * @buffer: the address of memory to print
- * @size: the size of the memory to print
+ * _memset - fill a block of memory with a specific value
+ * @s: starting address of memory to be filled
+ * @b: the desired value
+ * @n: number of bytes to be changed
  *
- * Return: Nothing.
+ * Return: changed array with new value for n bytes
  */
-void simple_print_buffer(char *buffer, unsigned int size) {
-    unsigned int i;
+char *_memset(char *s, char b, unsigned int n)
+{
+	int i = 0;
 
-    for (i = 0; i < size; i++) {
-        if (i % 10 == 0 && i != 0) {
-            _putchar('\n');
-        } else if (i != 0) {
-            _putchar(' ');
-        }
-
-        // Print the hexadecimal value using _putchar
-        char hex_digits[] = "0123456789ABCDEF";
-        _putchar('0');
-        _putchar('x');
-        _putchar(hex_digits[(buffer[i] >> 4) & 0xF]);
-        _putchar(hex_digits[buffer[i] & 0xF]);
-    }
-    _putchar('\n');
+	for (; n > 0; i++)
+	{
+		s[i] = b;
+		n--;
+	}
+	return (s);
 }
 
