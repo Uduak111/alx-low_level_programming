@@ -1,8 +1,15 @@
-#include <stdio.h>
+#include "main.h"
 
-
+/**
+ * _isupper - uppercase xter
+ * @c: char to check
+ *
+ * Return: 1 if uppercase 0 if not
+ */
 int _isupper(int c)
 {
-/* Check if the character is within the ASCII range of uppercase letters (A-Z) */
-return (c >= 'A' && c <= 'Z') ? 1 : 0
+if (c >= 'A' && c <= 'Z')
+	return (1);
+else
+	return (0);
 }
