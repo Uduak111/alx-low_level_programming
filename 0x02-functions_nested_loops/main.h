@@ -2,6 +2,11 @@
 #define MAIN_H
 
 void print_alphabet(void);
+// Function declaration for _putchar
+void _putchar(char c);
 
-#endif /* MAIN_H */
+// ... other declarations or includes ...
+
+
+#endif
 
