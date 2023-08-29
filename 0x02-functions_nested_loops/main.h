@@ -12,6 +12,10 @@ int _islower(int c);
 int _isalpha(int c);
 /* Function declaration for int print_sign */
 int print_sign(int n);
+/* Function declaration for int _abs */
+int _abs(int);
+
+
 
 /* ... other declarations or includes ... */
 
