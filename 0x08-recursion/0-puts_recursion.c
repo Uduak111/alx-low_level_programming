@@ -1,4 +1,4 @@
-#include <stdio.h>
+#include <main.h>
 
 /**
  * outputs a single character.
@@ -9,10 +9,10 @@ void printStringWithNewLine(const char *str)
 {
 while (*str != '\0')
 {
-putchar(*str);
+_putchar(*str);
 str++;
 }
-putchar('\n');
+_putchar('\n');
 
 }
 
