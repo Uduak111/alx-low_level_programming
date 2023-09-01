@@ -1,11 +1,11 @@
-#indef MAIN_H
+#ifdef MAIN_H
 #define MAIN_H
 
-// Function declaration for _putchar
+/* Function declaration for _putchar */
 void _puts_recursion(char *s);
 
 
 
-// ... other declarations or includes ...
+/* ... other declarations or includes ... */
 
-#endif // MAIN_H
+#endif /* MAIN_H */
