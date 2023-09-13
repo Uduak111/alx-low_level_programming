@@ -1,15 +1,12 @@
 #include <stdio.h>
 
 /**
- * @brief This is the main function of the program.
+ * main - prints the name of the file
  *
- * This function prints the message "2-main.c" to the console.
- *
- * @return 0 indicating successful execution.
+ * Return: Always 0 (Success)
  */
 int main(void)
 {
-printf("2-main.c\n");
-return (0);
+	printf("%s\n", __FILE__);
+	return (0);
 }
-
