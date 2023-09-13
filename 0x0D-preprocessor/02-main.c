@@ -2,7 +2,7 @@
 
 int main()
 {
-
-printf("2-main.c\n");
-return 0;
+		
+	printf("2-main.c\n");
+	return 0;
 }
