@@ -1,8 +1,8 @@
 #include <stdio.h>
 
-int main()
+int main(void)
 {
 
 printf("2-main.c\n");
-return 0;
+return (0);
 }
