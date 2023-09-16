@@ -15,7 +15,8 @@
  * it prints "(nil)" instead. A newline character is printed at the end to
  * ensure a new line after the strings.
  */
-void print_strings(const char *separator, const unsigned int n, ...) {
+void print_strings(const char *separator, const unsigned int n, ...)
+{
 va_list args;
 unsigned int i;
 
